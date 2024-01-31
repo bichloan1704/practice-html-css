@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.header, .header-middle{
+    @include between{
+        align-items: center;
+    }
+}
+.menus{
+    margin: 3rem;
+}
+body{
+    background-image: url(../assets/images/desktop/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
