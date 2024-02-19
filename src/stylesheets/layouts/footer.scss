@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.foooter, .footer-middle{
+    @include between{
+        align-items: center;
+    }
+}
+.footer{
+    display: flex;
+}
