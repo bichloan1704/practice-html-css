@@ -1,0 +1,33 @@
+@use "../../abstracts/" as *;
+
+.team-container{
+  background-image: url(../assets/images/desktop/team.png);
+  background-size: cover;
+  background-position: center 0px;
+  width: 1024px;
+  height: 751px;
+  display: flex;
+  box-shadow: 0px 5px 11px 0px #0000001A;
+  @include center-element;
+}
+
+.team .text1{
+  padding-top: 440px;
+}
+.team .text1, .team .text2, .team .text3{
+  @include font(45px, 500);
+  color: $text-grey;
+}
+.team .text4{
+  @include font(16px, 500);
+  margin-top: 20px;
+}
+.team-button{
+  @include blackbutton;
+  margin: 60px;
+}
+.team .text2{
+  @include gradient;
+}
+
+
