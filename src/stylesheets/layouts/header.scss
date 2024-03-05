@@ -1,17 +1,12 @@
 @use '../abstracts' as *;
 
-.header{
-//  width: 100%;   
-}
 .header, .header-middle, .header-right{
   @include between{
       align-items: center;
   }
   font-size: 16px;    
 }
-.header-middle{
-    // margin: 0px 100px;
-}
+
 .menus{
     margin: 2rem;   
     
