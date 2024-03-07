@@ -73,7 +73,7 @@
                         "like": "128"
                     }'
       ></include>
-      <includegit 
+      <include
         src="./components/courses.html"
         locals='{
                         "picture": "course3.png",
@@ -96,17 +96,62 @@
                     }'
       ></include>
     </div>
-  </div>
-</section>
-
-<!-- discount -->
-<section>
-  <div class="discount">
-    <div class="discount-container">
-      <div class="discount-head">
-
+    <div class="course-head">
+      <div class="left">
+        <h2>Discounted trainings</h2>
+    </div>
+    <div class="right">
+        <img src="../assets/icons/mark_left.svg" alt="logo">
+        <img src="../assets/icons/mark_right.svg" alt="logo">
       </div>
-
+    </div>
+      <div class="course-body">
+        <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount1.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount2.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount3.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount4.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+      </div>
+      
     </div>
   </div>
 </section>
