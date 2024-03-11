@@ -1,0 +1,49 @@
+@use "../../abstracts/" as *;
+
+.chat{
+    @include center-element;    
+    margin-top: 300px;
+}
+.chat-container{
+    background-image: url(../assets/images/desktop/chat.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color: white;
+    width: 100%;
+    height: 721px;
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;    
+    @include shadow;
+}
+.chat .panel{
+    background-image: url(../assets/images/desktop/panel.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 29%;
+    height: 321px;
+    top: 4587px;
+    left: 35%;
+    border-radius: 10px;
+    border: 1px;
+    gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    @include shadow;
+}
+.chat .panel .text1{
+    margin-top: 141px;    
+    @include font(24px, 500);
+    max-width: 324px;
+}
+.chat .panel .button{
+    @include font(16px, 500);
+    @include shadow;
+    background-color: #252739;
+    color: white;
+    margin-top: 30px;
+    max-width: 196px;
+    height: 56px;
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 10px;
+    gap: 10px;
+}
