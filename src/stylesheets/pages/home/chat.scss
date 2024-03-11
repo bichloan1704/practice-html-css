@@ -3,6 +3,7 @@
 .chat{
     @include center-element;    
     margin-top: 300px;
+    margin-bottom: 300px;
 }
 .chat-container{
     background-image: url(../assets/images/desktop/chat.png);
@@ -21,14 +22,15 @@
     background-position: center 0px;
     width: 29%;
     height: 321px;
-    top: 4587px;
+    top: 4700px;
     left: 35%;
     border-radius: 10px;
     border: 1px;
     gap: 20px;
     position: absolute;
     bottom: 0px;
-    @include shadow;
+    box-shadow: 0px 0px 600px 7px #252739;
+    
 }
 .chat .panel .text1{
     margin-top: 141px;    
