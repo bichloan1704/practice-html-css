@@ -1,0 +1,33 @@
+@use "../../abstracts/" as *;
+
+.review{
+    background: #FFFFFF;    
+    margin-top: 250px;
+}
+.review .text1{
+    @include font(45px, 600);
+    color: $black;
+}
+.review-container1{
+    padding: 44px;
+}
+.review-container1 .text2{
+    max-width: 792px;
+    color: $text-grey;
+    margin-top: 24px;
+    @include font(16px, 400);
+}
+.review-container2{
+    @include between;
+    // width: 100%;
+    padding: 44px 0px;
+    margin: 0px 15%; 
+    flex-wrap: wrap;
+}
+.cube_icon img{
+    min-width: 66px;
+    height: auto;
+}
+.cube_icon{
+    margin: 7px 44px;
+}
