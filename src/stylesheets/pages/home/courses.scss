@@ -1,0 +1,27 @@
+@use "../../abstracts/" as *;
+
+.courses{
+    margin-top: 250px;
+    padding: 16px;
+}
+.course-container{
+    margin-top: 100px;    
+    // width: 1160px;    
+}
+
+.course-head{
+    @include between;
+    margin-top: 60px
+}
+.course-head .left{
+    @include font(20px, 500);
+    color: $black;    
+}
+.course-head .right{
+    @include between;
+    width: 92px;
+}
+.course-body{
+    @include between;
+    margin-top: 30px;    
+}

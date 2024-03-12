@@ -1,42 +1,159 @@
 <!-- intro -->
 <section class="intro">
-    <div class="intro-container">
-        <center>
-            <h2 class="text1">Unlock Your Potential with</h2>
-            <h2 class="text2">Sinar Education</h2>
-            <p class="text3">Education isn't just about acquiring knowledge; it's the key that opens
-            doors to new worlds, empowers individuals, and shapes a brighter future.</p>
-            <button class="intro-button">Start training</button>
-        </center>
-    </div>
+  <div class="intro-container">
+    <center>
+      <h2 class="text1">Unlock Your Potential with</h2>
+      <h2 class="text2">Sinar Education</h2>
+      <p class="text3">
+        Education isn't just about acquiring knowledge; it's the key that opens
+        doors to new worlds, empowers individuals, and shapes a brighter future.
+      </p>
+      <button class="intro-button">Start training</button>
+    </center>
+  </div>
 </section>
 
 <!-- training -->
 <section class="training">
-    <div class="training-container">
-        <center>
-        <button class="training-button">Trainings</button><br>
-        <div>
-            <h2 class="text1">Discover</h2><h2 class="text2">the World</h2>
-        </div>
-        <h2 class="text3">of Design</h2>
-        </center>
-    </div>
-
+  <div class="training-container">
+    <center>
+      <button class="training-button">Trainings</button><br />
+      <div>
+        <h2 class="text1">Discover</h2>
+        <h2 class="text2">the World</h2>
+      </div>
+      <h2 class="text3">of Design</h2>
+    </center>
+  </div>
 </section>
 
 <!-- team -->
- <section class="team">
-    <div class="team-container">
-        <center>
-            <h2 class="text1">Start training with the</h2>
-            <strong class="text2">professional </strong><strong class="text3">team</strong>
-            <p class="text4">Come on, it's time to start training now!</p>
-            <button class="team-button">Start training</button>
-        </center>
+<section class="team">
+  <div class="team-container">
+    <center>
+      <h2 class="text1">Start training with the</h2>
+      <strong class="text2">professional </strong
+      ><strong class="text3">team</strong>
+      <p class="text4">Come on, it's time to start training now!</p>
+      <button class="team-button">Start training</button>
+    </center>
+  </div>
+</section>
+
+<!-- courses -->
+<section class="courses">
+  <div class="course-container">
+    <div class="course-head">
+      <div class="left">
+        <h2 class="text">Most Popular Courses</h2>
+      </div>
+      <div class="right">
+        <img src="../assets/icons/mark_left.svg" alt="logo-left" />
+        <img src="../assets/icons/mark_right.svg" alt="logo-right" />
+      </div>
     </div>
-
- </section>
-
-
-
+    <div class="course-body">
+      <include
+        src="./components/courses.html"
+        locals='{
+                        "picture": "course1.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+      ></include>
+      <include
+        src="./components/courses.html"
+        locals='{
+                        "picture": "course2.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+      ></include>
+      <include
+        src="./components/courses.html"
+        locals='{
+                        "picture": "course3.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+      ></include>
+      <include
+        src="./components/courses.html"
+        locals='{
+                        "picture": "course4.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+      ></include>
+    </div>
+    <div class="course-head">
+      <div class="left">
+        <h2>Discounted trainings</h2>
+    </div>
+    <div class="right">
+        <img src="../assets/icons/mark_left.svg" alt="logo">
+        <img src="../assets/icons/mark_right.svg" alt="logo">
+      </div>
+    </div>
+      <div class="course-body">
+        <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount1.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount2.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount3.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+                <include
+                    src="./components/courses.html"
+                    locals='{
+                        "picture": "discount4.png",
+                        "price": "$150",
+                        "descript": "Launch career as a web desi-gner and learning more.",
+                        "follow": "5.3k",
+                        "view": "3.2k",
+                        "like": "128"
+                    }'
+                ></include>
+      </div>
+      
+    </div>
+  </div>
+</section>
