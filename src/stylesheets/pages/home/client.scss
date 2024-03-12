@@ -1,0 +1,69 @@
+@use "../../abstracts/" as *;
+
+.client{
+    @include center-element;
+    margin-top: 40%;
+}
+.client-container{
+    width: 100%;
+}
+.client .head .text1{
+    @include font(24px, 500);
+    color: $text-grey;
+    @include md{
+        @include font(22px, 500);
+        // padding-top: 100%;
+    }
+}
+.client .head .text2{
+    @include font(45px, 600);
+    margin-top: 1%;
+    @include lg{
+        @include font(36px, 500);
+    }
+    @include md{
+        @include font(24px, 500);
+    }
+}
+.client .body{
+    background-image: url(../assets/images/desktop/client.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 844px;
+    margin-top: 7%;
+    @include md{
+        height: 400px;
+    }
+    @include sm{
+        height: 278px;
+    }
+}
+.client .body .child{
+    background-color: white;
+    padding: 24px;
+    width: 327px;
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;    
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include shadow;
+    @include md{
+        top: 65%;
+    }
+    @include sm{
+        top: 80%
+    }
+}
+.client .body .child .text1{
+    @include font(2rem, 600);
+    color: black;
+    margin: 10px 0px;
+}
+.client .body .child .text2{
+    @include font(14px, 500);
+    color: $text-grey;
+}
