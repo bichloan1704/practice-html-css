@@ -1,22 +1,25 @@
 @use "../../abstracts/" as *;
 
 .intro{
-    @include between;   
+  @include center-element;
 }
 .intro-container{
-    margin-top: 100px;
-    width: 100%;
+  margin-top: 8%;
+  width: 100%;
+  @include xs{
+      margin-top: 65px;
+  }
 }
 .intro .text1{
-    background: linear-gradient(0deg, #0D154B, #0D154B);        
+    color: $black;
 }
 .intro .text2{
-    background: linear-gradient(90deg, #6F48FC 21.63%, #D07EF7 60.55%, #56C6E7 79.11%);
+  margin-top: 10px;
+  @include gradient;
 }
 .intro .text1, .intro .text2{
     @include font(57px, 550);
-    background-clip: text;
-    color: transparent;
+
 }
 .intro .text3{
     @include font(16px, 500);
@@ -27,5 +30,18 @@
     background-color: #252739;
     color: white;
     size: 16px;
-    margin-top: 30px;    
+    margin-top: 30px;
+}
+@include lg{
+  .part1 .text1, .part1 .text2{
+      @include font(45px, 600);
+  }
+  .part1 .text1, .part1 .text3{
+      @include font(13px, 500);
+  }
+}
+@include sm{
+  .part1 .text1, .part1 .text2{
+      @include font(24px, 600);
+  }
 }

@@ -10,19 +10,21 @@
   background-position: center 0px;
 }
 .body-content {
-  padding: 3.2rem 14rem;
+  padding: 1% 8%;
+  width: 100%;
 
-  @include lg {
-    padding: 3.2rem 7rem;
-  }
-
-  @include md {
-    padding: 1.8rem 2.7rem;
-  }
 }
 button{
   padding: 15px 25px;
   border-radius: 10px;
   box-shadow: 1px 15px 11px 0px #0000001A;
   border: none;
+}
+@include sm{
+  .text-hidden{
+    display: none;
+  }
+  .body-content{
+    padding: 1% 15px;
+  }
 }

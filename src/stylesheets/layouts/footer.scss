@@ -1,18 +1,36 @@
 @use '../abstracts' as *;
 
+.footer{
+  margin: 50px 0px;
+  @include sm{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+}
 .footer, .footer-mid{
     @include between
 }
 .footer-left{
     width: 279px;
+    @include sm{
+      width: 100%;
+    }
 }
 .footer-mid{
     width: 216px;
+    @include lg{
+      display: none;
+    }
 }
 .footer-right{
     width: 314px;
+    @include sm{
+      margin: 30px 0px;
+    }
 }
-.body{
+.footer .body{
     padding-top: 16px;
     font-size: 15px;
     color: #79757F;
@@ -22,7 +40,7 @@
 }
 .footer-child a{
     font-size: 16px;
-    color: #79757f;        
+    color: #79757f;
 }
 .head{
     font-weight: lighter;
@@ -55,8 +73,8 @@
     background-color: transparent;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 10px;    
+    border-radius: 10px;
     border: none;
     color: #A9A9C0;
-    font-size: 15px;    
+    font-size: 15px;
 }

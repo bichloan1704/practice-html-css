@@ -1,7 +1,7 @@
 @use "../../abstracts/" as *;
 
 .chat{
-    @include center-element;    
+    @include center-element;
     margin-top: 300px;
     margin-bottom: 300px;
 }
@@ -13,8 +13,16 @@
     width: 100%;
     height: 721px;
     border-radius: 10px;
-    border: 1px solid #E6E0EC;    
+    border: 1px solid #E6E0EC;
     @include shadow;
+    @include md{
+      width: 578px;
+      height: 407px;
+    }
+    @include sm{
+        width: 322px;
+        height: 227px;
+    }
 }
 .chat .panel{
     background-image: url(../assets/images/desktop/panel.png);
@@ -22,7 +30,7 @@
     background-position: center 0px;
     width: 29%;
     height: 321px;
-    top: 4700px;
+    top: 4450px;
     left: 35%;
     border-radius: 10px;
     border: 1px;
@@ -30,12 +38,27 @@
     position: absolute;
     bottom: 0px;
     box-shadow: 0px 0px 600px 7px #252739;
-    
+    @include shadow;
+    @include md{
+        width: 313px;
+        height: 263px;
+        top: 120%;
+    }
+    @include sm{
+        width: 205px;
+        height: 164px;
+        top: 125%;
+    }
+
 }
 .chat .panel .text1{
-    margin-top: 141px;    
-    @include font(24px, 500);
+    margin-top: 141px;
     max-width: 324px;
+    @include font(24px, 500);
+    @include sm{
+      @include font(11px, 500);
+      margin-top: 35%;
+    }
 }
 .chat .panel .button{
     @include font(16px, 500);
@@ -48,4 +71,7 @@
     padding: 16px, 24px, 16px, 24px;
     border-radius: 10px;
     gap: 10px;
+    @include sm{
+      @include font(12px, 500);
+    }
 }

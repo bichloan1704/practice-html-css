@@ -1,12 +1,18 @@
 @use "../../abstracts/" as *;
 
 .review{
-    background: #FFFFFF;    
-    margin-top: 250px;
+    background: #FFFFFF;
+    // margin-top: 250px;
 }
 .review .text1{
     @include font(45px, 600);
     color: $black;
+    @include lg{
+      @include font(32px, 600);
+    }
+    @include sm{
+        @include font(24px, 600);
+    }
 }
 .review-container1{
     padding: 44px;
@@ -16,12 +22,18 @@
     color: $text-grey;
     margin-top: 24px;
     @include font(16px, 400);
+    @include lg{
+        @include font(14px, 600);
+    }
+    @include sm{
+        @include font(12px, 600);
+    }
 }
 .review-container2{
     @include between;
     // width: 100%;
     padding: 44px 0px;
-    margin: 0px 15%; 
+    margin: 0px 15%;
     flex-wrap: wrap;
 }
 .cube_icon img{

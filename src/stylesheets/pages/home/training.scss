@@ -2,9 +2,12 @@
 
 .training{
     margin-top: 250px;
+    @include xs{
+      margin-top: 130px;
+    }
 }
 .training-container{
-    margin-top: 100px;    
+    margin-top: 100px;
 }
 .training-button{
     background: white;
@@ -13,9 +16,12 @@
     padding: 10px 15px;
     box-shadow: 0px 5px 3px 0px #0000000D;
     margin-bottom: 30px;
-} 
-.training .text1, .training .text2, .training .text3{    
-    @include font(57px, 600)
+}
+.training .text1, .training .text2, .training .text3{
+    @include font(57px, 600);
+    @include sm{
+      @include font(24px, 600);
+    }
 }
 .training .text1{
     @include gradient
