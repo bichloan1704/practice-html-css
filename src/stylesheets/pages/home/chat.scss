@@ -10,7 +10,8 @@
     background-repeat: no-repeat;
     background-position: center 0px;
     background-color: white;
-    width: 100%;
+    background-size: cover;
+    width: 80%;
     height: 721px;
     border-radius: 10px;
     border: 1px solid #E6E0EC;
@@ -26,18 +27,17 @@
 }
 .chat .panel{
     background-image: url(../assets/images/desktop/panel.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
-    width: 29%;
-    height: 321px;
-    top: 4450px;
-    left: 35%;
+    width: 452px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    top: 115%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
-    border: 1px;
-    gap: 20px;
-    position: absolute;
-    bottom: 0px;
-    box-shadow: 0px 0px 600px 7px #252739;
+    border: 1px solid #E6E0EC;
     @include shadow;
     @include md{
         width: 313px;
@@ -65,13 +65,12 @@
     @include shadow;
     background-color: #252739;
     color: white;
-    margin-top: 30px;
+    margin-top: 7%;
     max-width: 196px;
-    height: 56px;
-    padding: 16px, 24px, 16px, 24px;
+    height: 18%;
+    padding: 0% 6%;
     border-radius: 10px;
-    gap: 10px;
     @include sm{
-      @include font(12px, 500);
+        @include font(12px, 500);
     }
 }

@@ -7,15 +7,19 @@
   background-image: url(../assets/images/desktop/team.png);
   background-size: cover;
   background-position: center 0px;
-  // width: 1024px;
-  height: 751px;
-  display: flex;
-  box-shadow: 0px 5px 11px 0px #0000001A;
-  @include center-element;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-left: 2%;
+  box-shadow: 10px 20px 50px 10px #0000001A;
+  width: 98%;
+  height: fit-content;
+  @include xs{
+      background-image: url(../assets/images/mobile/team_mb.png);
+  }
 }
 
 .team .text1{
-  padding-top: 440px;
+  padding-top: 43%;
   @include xs{
     padding-top: 80%;
   }
