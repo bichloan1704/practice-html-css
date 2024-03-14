@@ -23,7 +23,7 @@
 }
 .intro .text3{
     @include font(16px, 500);
-    width: 557px;
+    max-width: 557px;
     margin-top: 20px;
 }
 .intro-button{
