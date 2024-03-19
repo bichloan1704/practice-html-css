@@ -23,25 +23,24 @@
 }
 .intro .text3{
     @include font(16px, 500);
-    max-width: 557px;
+    max-width: 607px;
     margin-top: 20px;
 }
 .intro-button{
-    background-color: #252739;
-    color: white;
+    @include blackbutton;
     size: 16px;
     margin-top: 30px;
 }
 @include lg{
-  .part1 .text1, .part1 .text2{
+  .intro .text1, .intro .text2{
       @include font(45px, 600);
   }
-  .part1 .text1, .part1 .text3{
+  .intro .text1, .intro .text3{
       @include font(13px, 500);
   }
 }
 @include sm{
-  .part1 .text1, .part1 .text2{
+  .intro .text1, .intro .text2{
       @include font(24px, 600);
   }
 }

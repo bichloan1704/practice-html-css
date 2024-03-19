@@ -40,7 +40,9 @@
     max-width: 102px;
     height: 44px;
     margin-top: 25px;
-
+    @include sm{
+      display: none;
+    }
 }
 .header-right .signup a{
     background-color: white;
