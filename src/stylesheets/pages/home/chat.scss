@@ -63,6 +63,7 @@
 .chat .panel .button{
     @include font(16px, 500);
     @include shadow;
+    @include blackbutton;
     background-color: #252739;
     color: white;
     margin-top: 7%;
