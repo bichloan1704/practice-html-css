@@ -60,6 +60,9 @@
     display: flex;
     border-radius: 10px;
     border: solid 2px #E6E0EC;
+    @include xs{
+
+    }
 }
 .footer-input button{
     background: black;

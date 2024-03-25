@@ -4,6 +4,9 @@
     @include center-element;
     margin-top: 300px;
     margin-bottom: 100px;
+    @include sm{
+      margin-top: 200px;
+    }
 }
 .chat-container{
     background-image: url(../assets/images/desktop/chat.png);
