@@ -29,16 +29,14 @@
 }
 .intro-button{
     @include blackbutton;
-    size: 16px;
     margin-top: 30px;
-    // border: 4px solid #413f3f;
 
 }
 @include lg{
   .intro .text1, .intro .text2{
       @include font(45px, 600);
   }
-  .intro .text1, .intro .text3{
+  .intro .text3{
       @include font(13px, 500);
   }
 }
