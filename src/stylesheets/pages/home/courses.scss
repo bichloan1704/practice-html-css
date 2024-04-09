@@ -2,21 +2,21 @@
 
 .courses{
     width: 100%;
-    overflow: hidden;
-    padding: 10%;
+    overflow-x: auto;
+    padding: 5rem;
 }
 .course-container{
-    margin-top: 100px;
+    margin-top: 2rem;
     min-width: 1160px;
     min-height: 1100px;
 }
 
 .course-head{
     @include between;
-    margin-top: 60px
+    margin-top: 6rem
 }
 .course-head .left{
-    @include font(20px, 500);
+    @include font(2rem, 500);
     color: $black;
 }
 .course-head .right{
@@ -25,5 +25,5 @@
 }
 .course-body{
     @include between;
-    margin-top: 30px;
+    margin-top: 1rem;
 }

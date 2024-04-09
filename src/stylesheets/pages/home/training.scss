@@ -1,9 +1,9 @@
 @use "../../abstracts/" as *;
 
 .training{
-    margin-top: 20%;
+    margin-top: 20rem;
     @include xs{
-      margin-top: 130px;
+      margin-top: 13rem;
     }
 }
 .training-button{
@@ -15,9 +15,9 @@
     margin-bottom: 30px;
 }
 .training .text1, .training .text2, .training .text3{
-    @include font(57px, 600);
+    @include font(5.7rem, 600);
     @include sm{
-      @include font(24px, 600);
+      @include font(2.4rem, 600);
     }
 }
 .training .text1{
@@ -25,7 +25,7 @@
 }
 .training .text2, .training .text3{
     color: $black;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 

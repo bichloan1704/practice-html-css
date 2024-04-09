@@ -2,10 +2,10 @@
 
 .chat{
     @include center-element;
-    margin-top: 250px;
-    margin-bottom: 60px;
+    width: 100%;
+    margin-top: 20rem;
     @include sm{
-      margin-top: 130px;
+      margin-top: 10rem;
     }
 }
 .chat-container{
@@ -15,56 +15,44 @@
     background-color: white;
     background-size: cover;
     width: 80%;
-    height: 721px;
+    padding-top: 30%;
     border-radius: 10px;
     border: 1px solid #E6E0EC;
     @include shadow;
-    @include md{
-      width: 578px;
-      height: 407px;
-    }
-    @include sm{
-        width: 322px;
-        height: 227px;
-    }
 }
 .chat .panel{
     background-image: url(../assets/images/desktop/panel.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
-    width: 452px;
-    height: 300px;
+    max-width: 452px;
     position: relative;
     left: 50%;
-    top: 115%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 95%);
     border-radius: 10px;
     border: 1px solid #E6E0EC;
     @include shadow;
     @include md{
-        width: 313px;
-        height: 263px;
+        max-width: 313px;
         top: 120%;
     }
     @include sm{
-        width: 205px;
-        height: 164px;
+        max-width: 205px;
         top: 125%;
     }
 
 }
 .chat .panel .text1{
-    margin-top: 141px;
+    margin-top: 14rem;
     max-width: 324px;
-    @include font(24px, 500);
+    @include font(2.4rem, 500);
     @include sm{
-      @include font(11px, 500);
-      margin-top: 35%;
+      @include font(1.1rem, 500);
+      margin-top: 35%
     }
 }
 .chat .panel .button{
-    @include font(16px, 500);
+    @include font(1.6rem, 500);
     @include shadow;
     @include blackbutton;
     background-color: #252739;
@@ -72,9 +60,10 @@
     margin-top: 7%;
     max-width: 196px;
     height: 18%;
-    padding: 0% 6%;
+    padding: 3% 6%;
+    margin-bottom: 10%;
     border-radius: 10px;
     @include sm{
-        @include font(12px, 500);
+        @include font(1.2rem, 500);
     }
 }

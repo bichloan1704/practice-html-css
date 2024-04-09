@@ -2,28 +2,30 @@
 
 .client{
     @include center-element;
-    margin-top: 30%;
+    margin-top: 35rem;
     margin-bottom: -6%;
+    @include sm{
+        margin-top: 25rem;
+    }
 }
 .client-container{
     width: 100%;
 }
 .client .head .text1{
-    @include font(24px, 500);
+    @include font(2.4rem, 500);
     color: $text-grey;
     @include md{
-        @include font(22px, 500);
-        // padding-top: 100%;
+        @include font(2.2rem, 500);
     }
 }
 .client .head .text2{
-    @include font(45px, 600);
+    @include font(4.5rem, 600);
     margin-top: 1%;
     @include lg{
-        @include font(36px, 500);
+        @include font(3.6rem, 500);
     }
     @include md{
-        @include font(24px, 500);
+        @include font(2.4rem, 500);
     }
 }
 .client .body{
@@ -65,6 +67,6 @@
     margin: 10px 0px;
 }
 .client .body .child .text2{
-    @include font(14px, 500);
+    @include font(1.4rem, 500);
     color: $text-grey;
 }

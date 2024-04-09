@@ -1,7 +1,7 @@
 @use "../../abstracts/" as *;
 
 .team{
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 .team-container{
   background-image: url(../assets/images/desktop/team.png);
@@ -25,23 +25,23 @@
   }
 }
 .team .text1, .team .text2, .team .text3{
-  @include font(45px, 500);
+  @include font(4.5rem, 500);
   color: $text-grey;
   @include md{
-    @include font(36px, 500);
+    @include font(3.6rem, 500);
   }
 @include md{
-    @include font(28px, 500);
+    @include font(2.8rem, 500);
   }
 }
 .team .text4{
-  @include font(16px, 500);
-  margin-top: 20px;
+  @include font(1.6rem, 500);
+  margin-top: 2rem;
   @include md{
-    @include font(14px, 500);
+    @include font(1.4rem, 500);
   }
 @include md{
-    @include font(12px, 500);
+    @include font(1.2rem, 500);
   }
 }
 .team-button{
