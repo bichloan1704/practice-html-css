@@ -6,13 +6,11 @@
   }
   font-size: 16px;
 }
-
 .menus{
     margin: 2rem;
     @include lg{
       display: none;
   }
-
 }
 .menus a {
     color: $text-grey;
@@ -39,7 +37,7 @@
 .header-right .signup{
     max-width: 102px;
     height: 44px;
-    margin-top: 25px;
+    margin-top: 2.5rem;
     @include sm{
       display: none;
     }

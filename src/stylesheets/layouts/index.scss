@@ -8,6 +8,10 @@
   background-image: url(../assets/images/desktop/bg.png);
   background-size: cover;
   background-position: center 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 .body-content {
   padding: 1% 8%;
@@ -20,6 +24,9 @@ button{
   box-shadow: 1px 15px 11px 0px #0000001A;
   border: none;
 }
+p, h2, img{
+  margin: 0px auto;
+}
 @include sm{
   .text-hidden{
     display: none;
@@ -27,5 +34,7 @@ button{
   .body-content{
     padding: 1% 15px;
   }
-
+}
+a{
+  color: black;
 }

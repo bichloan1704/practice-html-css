@@ -26,10 +26,11 @@
     @include font(1.6rem, 500);
     max-width: 607px;
     margin-top: 2rem;
+    margin: 2rem auto;
 }
 .intro-button{
     @include blackbutton;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
 }
 @include lg{

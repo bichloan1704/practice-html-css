@@ -23,6 +23,7 @@
     color: $black;
 }
 .port .card_2 .tag{
+    @include font(1.6rem, 600);
     width: fit-content;
     border: 1px solid #E6E0EC;
     border-radius: 10px;
@@ -32,10 +33,12 @@
 }
 .port .card_2 .price{
     @include font(24px, 500);
-    margin-top: 4px;
+    margin: 0px 0px;
+    margin-top: 8px;
 }
 .port .card_3{
     font-size: 14px;
+    text-align: left;
 }
 .port .card_4 .follow, .port .card_4 .view, .port .card_4 .like{
     width: 49px;
@@ -44,7 +47,7 @@
     };
 }
 .port strong{
-  @include font(15px, 500);
+  @include font(1.5rem, 500);
 }
 @include lg{
   .hidden{
